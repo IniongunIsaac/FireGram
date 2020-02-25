@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="egn-Wy-HwC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera-->
+        <scene sceneID="3cy-Jb-yDa">
+            <objects>
+                <viewController id="D7C-VP-Psu" customClass="CameraViewController" customModule="FireGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ocy-1M-rY9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wvN-Ua-puM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera" id="Z1n-bf-UVM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eB4-MG-kr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2249" y="86"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GMU-Im-IQo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="egn-Wy-HwC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="camera" catalog="system" selectedImage="camera.fill" id="kNU-oZ-SHH">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xt9-AE-5P6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="D7C-VP-Psu" kind="relationship" relationship="rootViewController" id="ukj-Fk-E1Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zkE-SG-JFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2474" y="-638"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
+    </resources>
+</document>

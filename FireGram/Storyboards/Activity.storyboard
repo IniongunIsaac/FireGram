@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="shP-u3-yhc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity-->
+        <scene sceneID="fjw-QQ-g0B">
+            <objects>
+                <viewController id="ocU-jg-hEU" customClass="ActivityViewController" customModule="FireGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KEY-yt-5T6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="f4k-8u-lly"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activity" id="wXO-Q3-rqp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ss7-eR-6K2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3488" y="86"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="47S-Vf-4bn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="shP-u3-yhc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" selectedImage="heart.fill" id="jNZ-KV-cO0">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TCi-rR-LsN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ocU-jg-hEU" kind="relationship" relationship="rootViewController" id="BdY-js-ELz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oen-zM-Osk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3488" y="-638"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+    </resources>
+</document>
