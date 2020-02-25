@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		145E581924045F4B003C6867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E581824045F4B003C6867 /* AppDelegate.swift */; };
 		145E581B24045F4B003C6867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E581A24045F4B003C6867 /* SceneDelegate.swift */; };
-		145E581D24045F4B003C6867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E581C24045F4B003C6867 /* ViewController.swift */; };
+		145E581D24045F4B003C6867 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E581C24045F4B003C6867 /* SignInViewController.swift */; };
 		145E582024045F4B003C6867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145E581E24045F4B003C6867 /* Main.storyboard */; };
 		145E582224045F4F003C6867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145E582124045F4F003C6867 /* Assets.xcassets */; };
 		145E582524045F4F003C6867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145E582324045F4F003C6867 /* LaunchScreen.storyboard */; };
+		145E582D240462D7003C6867 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E582C240462D7003C6867 /* SignUpViewController.swift */; };
+		145E582F24051CA7003C6867 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E582E24051CA7003C6867 /* HomeViewController.swift */; };
+		145E583124051CB3003C6867 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E583024051CB3003C6867 /* CameraViewController.swift */; };
+		145E583324051CBD003C6867 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E583224051CBD003C6867 /* DiscoverViewController.swift */; };
+		145E583524051CCA003C6867 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E583424051CCA003C6867 /* ActivityViewController.swift */; };
+		145E583724051CD6003C6867 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E583624051CD6003C6867 /* ProfileViewController.swift */; };
+		145E583924051D08003C6867 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E583824051D08003C6867 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		145E581524045F4B003C6867 /* FireGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145E581824045F4B003C6867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		145E581A24045F4B003C6867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		145E581C24045F4B003C6867 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		145E581C24045F4B003C6867 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		145E581F24045F4B003C6867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		145E582124045F4F003C6867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145E582424045F4F003C6867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145E582624045F4F003C6867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145E582C240462D7003C6867 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		145E582E24051CA7003C6867 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		145E583024051CB3003C6867 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		145E583224051CBD003C6867 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		145E583424051CCA003C6867 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		145E583624051CD6003C6867 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		145E583824051D08003C6867 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +71,19 @@
 			isa = PBXGroup;
 			children = (
 				145E581824045F4B003C6867 /* AppDelegate.swift */,
+				145E582E24051CA7003C6867 /* HomeViewController.swift */,
+				145E583824051D08003C6867 /* SearchViewController.swift */,
+				145E583024051CB3003C6867 /* CameraViewController.swift */,
+				145E583224051CBD003C6867 /* DiscoverViewController.swift */,
+				145E583424051CCA003C6867 /* ActivityViewController.swift */,
+				145E583624051CD6003C6867 /* ProfileViewController.swift */,
 				145E581A24045F4B003C6867 /* SceneDelegate.swift */,
-				145E581C24045F4B003C6867 /* ViewController.swift */,
+				145E581C24045F4B003C6867 /* SignInViewController.swift */,
 				145E581E24045F4B003C6867 /* Main.storyboard */,
 				145E582124045F4F003C6867 /* Assets.xcassets */,
 				145E582324045F4F003C6867 /* LaunchScreen.storyboard */,
 				145E582624045F4F003C6867 /* Info.plist */,
+				145E582C240462D7003C6867 /* SignUpViewController.swift */,
 			);
 			path = FireGram;
 			sourceTree = "<group>";
@@ -138,9 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145E581D24045F4B003C6867 /* ViewController.swift in Sources */,
+				145E583924051D08003C6867 /* SearchViewController.swift in Sources */,
+				145E582F24051CA7003C6867 /* HomeViewController.swift in Sources */,
+				145E581D24045F4B003C6867 /* SignInViewController.swift in Sources */,
+				145E583324051CBD003C6867 /* DiscoverViewController.swift in Sources */,
+				145E583524051CCA003C6867 /* ActivityViewController.swift in Sources */,
 				145E581924045F4B003C6867 /* AppDelegate.swift in Sources */,
+				145E582D240462D7003C6867 /* SignUpViewController.swift in Sources */,
+				145E583724051CD6003C6867 /* ProfileViewController.swift in Sources */,
 				145E581B24045F4B003C6867 /* SceneDelegate.swift in Sources */,
+				145E583124051CB3003C6867 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
