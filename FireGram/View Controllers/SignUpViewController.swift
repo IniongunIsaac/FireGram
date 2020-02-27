@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -50,7 +52,22 @@ class SignUpViewController: UIViewController {
         
         profileImageView.layer.cornerRadius = profileImageView.frame.width / 2.0
         profileImageView.clipsToBounds = true
-        
+    
     }
 
+    @IBAction func signupButtonTapped(_ sender: Any) {
+        Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { authResult, error in
+            if error != nil {
+                debugPrint("An error occurred: \(error!.localizedDescription)")
+                return
+            }
+            let ref = Database.database().reference()
+            let usersRef = ref.child("users")
+            let uid = authResult!.user.uid
+            let newUserRef = usersRef.child(uid)
+            newUserRef.setValue(["username": self.usernameTextField.text!, "email": self.emailTextfield.text!])
+            
+        }
+    }
+    
 }

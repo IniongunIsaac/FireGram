@@ -37,6 +37,9 @@ class SignInViewController: UIViewController {
         passwordTextfield.layer.addSublayer(passwordBottomLayer)
         
     }
-
+    
+    @IBAction func signinButtonTapped(_ sender: Any) {
+    }
+    
 }
 

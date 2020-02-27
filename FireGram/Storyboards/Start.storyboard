@@ -44,6 +44,7 @@
                                             <color key="titleColor" white="1" alpha="0.60434503419999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="signinButtonTapped:" destination="vXB-mo-0bv" eventType="touchUpInside" id="ffJ-p1-BGI"/>
                                             <segue destination="Bqr-LL-Cv3" kind="presentation" id="rsS-Ls-kY4"/>
                                         </connections>
                                     </button>
@@ -109,7 +110,7 @@
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="ghT-VE-Rb6">
-                                <rect key="frame" x="167" y="75" width="80.000000000000227" height="80"/>
+                                <rect key="frame" x="167" y="75" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="5gf-Vv-mTk"/>
                                     <constraint firstAttribute="width" constant="79.999999999999773" id="Kbv-AY-AqN"/>
@@ -151,6 +152,9 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="0.60434503419999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signupButtonTapped:" destination="MVt-Dq-Ko6" eventType="touchUpInside" id="dcm-uZ-ir8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
